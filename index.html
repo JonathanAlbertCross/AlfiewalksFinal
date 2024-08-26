@@ -3,28 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alfie Walks and Boarding</title>
+    <meta
+      name="description"
+      content="Alfie Walks and Boarding offers professional dog walking, sitting, and boarding services in Gamlingay. Join us for tail-wagging adventures and personalized care for your furry friend."
+    />
+    <meta property="og:title" content="Alfie Walks and Boarding" />
+    <meta
+      property="og:description"
+      content="Professional dog walking, sitting, and boarding services in Gamlingay. Tail-wagging adventures and personalized care for your furry friend."
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/assets/images/your-image.jpg"
+    />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <title>
+      Alfie Walks and Boarding | Dog Walking & Boarding Services in Gamlingay
+    </title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" href="/assets/icons/paw.png" type="image/x-icon" />
     <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Alfie Walks and Boarding",
+        "description": "Professional dog walking, sitting, and boarding services in Gamlingay.",
+        "image": "https://yourwebsite.com/assets/images/your-image.jpg",
+        "telephone": "07580530990",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gamlingay",
+          "addressCountry": "UK"
+        },
+        "url": "https://alfiewalks.co.uk",
+        "sameAs": ["https://www.facebook.com/alfiewalksandboarding"]
+      }
+    </script>
   </head>
   <body>
     <nav id="desktop-nav">
-      <img class = "paw" src="/assets/whitepaw.png" alt="paw">
+      <img class="paw" src="/assets/whitepaw.png" alt="White paw print icon" />
       <div class="logo">ALFIE WALKS</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#skills">Services</a></li>
           <li><a href="#projects">Prices</a></li>
-          <li><a href="https://www.facebook.com/alfiewalksandboarding/">Facebook</a></li>
-          <li><a href="#contact">Contact</a></li>
-
+          <li>
+            <a href="https://www.facebook.com/alfiewalksandboarding/"
+              >Facebook</a
+            >
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <img class = "paw" src="/assets/whitepaw.png" alt="paw">
+      <img class="paw" src="/assets/whitepaw.png" alt="White paw print icon" />
       <div class="logo">ALFIE WALKS</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -33,19 +71,26 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Services</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Prices</a></li>
-          <li><a href="https://www.facebook.com/alfiewalksandboarding/" onclick="toggleMenu()">Facebook</a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/alfiewalksandboarding/"
+              onclick="toggleMenu()"
+              >Facebook</a
+            >
+          </li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-       
-          
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/dogbackground.png" alt="Alfie's picture" />
+        <img
+          src="./assets/dogbackground.png"
+          alt="Dog enjoying a walk with Alfie Walks"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi,<br />My name is</p>
@@ -55,19 +100,14 @@
           tail-wagging, butt-sniffing adventures!
         </p>
         <div class="btn-container">
-          <button class="btn btn-color-1" onclick="window.location.href='#contact';">
+          <button
+            class="btn btn-color-1"
+            onclick="window.location.href='#contact';"
+          >
             Contact Us
           </button>
-          
         </div>
       </div>
-      <!--     <img
-      src="./assets/arrow-211-64.png"
-      alt="Arrow Icon"
-      class="icon arrow"
-      onclick="location.href='.#about'"
-    />
--->
     </section>
     <section id="about">
       <p class="section__text__p1">Get to know more</p>
@@ -76,7 +116,7 @@
         <div class="section__pic-container">
           <img
             src="./assets/wrest.jpg"
-            alt="Profile Picture"
+            alt="Dogs playing during a walk with Alfie Walks"
             class="about-pic"
           />
         </div>
@@ -111,13 +151,6 @@
           </div>
         </div>
       </div>
-      <!--      <img
-        src="./assets/arrow-211-64.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href='.#skills'"
-      />
-      -->
     </section>
     <section id="skills">
       <p class="section__text__p1">Explore our</p>
@@ -178,7 +211,9 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Dog Boarding & Sitting Services</h2>
+            <h2 class="experience-sub-title">
+              Dog Boarding & Sitting Services
+            </h2>
             <div class="article-container">
               <article>
                 <div>
@@ -192,41 +227,33 @@
               <article>
                 <div>
                   <h3>Luxury Boarding</h3>
-                  <p>
-                    Includes extra walks & playtime.
-                  </p>
+                  <p>Includes extra walks & playtime.</p>
                 </div>
               </article>
-            
               <article>
                 <div>
                   <h3>Extended Stay</h3>
-                  <p>
-                    Long-term boarding for extended trips.
-                  </p>
+                  <p>Long-term boarding for extended trips.</p>
                 </div>
               </article>
               <article>
                 <div>
                   <h3>Personalised Care</h3>
-                  <p>
-                    Tailored routines, meals, and activities.
-                  </p>
+                  <p>Tailored routines, meals, and activities.</p>
                 </div>
               </article>
               <article>
                 <div>
                   <h3>In-Home Dog Sitting</h3>
-                  <p>
-                    Caring for your pup in their familiar environment.
-                  </p>
+                  <p>Caring for your pup in their familiar environment.</p>
                 </div>
               </article>
               <article>
                 <div>
                   <h3>Overnight Dog Sitting</h3>
                   <p>
-                    This includes extended stays, maintaining your pups routine.
+                    This includes extended stays, maintaining your pup's
+                    routine.
                   </p>
                 </div>
               </article>
@@ -234,124 +261,95 @@
           </div>
         </div>
       </div>
-      <!--       <img
-        src="./assets/arrow-211-64.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-      -->
     </section>
     <section id="projects">
-      <section id="skills">
-        <p class="section__text__p1">Explore our</p>
-        <h1 class="title">Prices</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Dog Walking Services</h2>
-              <div class="article-container">
-                <article>
-                  <div>
-                    <h3>Dog Walks</h3>
-                    <p>
-                     (1 hour)<br>
-                     £12
-                    </p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Adventure Walks</h3>
-                    <p>
-                      (1 hour)<br>
-                   £15
-                    </p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Puppy Playtime</h3>
-                    <p>
-                      (30 minutes)<br>
-                   £10
-                    </p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Group Walks</h3>
-                    <p>(1 hour)
-                      <br>
-                      £10 <br>per dog, per walk
-                    </p>
-                  </div>
-                </article>
-              
-              </div>
+      <p class="section__text__p1">Explore our</p>
+      <h1 class="title">Prices</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Dog Walking Services</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Dog Walks</h3>
+                  <p>(1 hour)<br />£12</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Adventure Walks</h3>
+                  <p>(1 hour)<br />£15</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Puppy Playtime</h3>
+                  <p>(30 minutes)<br />£10</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Group Walks</h3>
+                  <p>(1 hour)<br />£10 per dog, per walk</p>
+                </div>
+              </article>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Dog Boarding Services</h2>
-              <div class="article-container">
-                <article>
-                  <div>
-                    <h3>Home Boarding</h3>
-                    <p>
-                    £35 per night
-                    </p>
-                  </div>
-                </article>
-          
-                <article>
-                  <div>
-                    <h3>Social Boarding</h3>
-                    (with other dogs, per night)<br> £30 per night
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Extended Stay</h3>
-                    <p>
-                      (7+ nights)<br> £25 per night
-                    </p>
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>Personalised Care</h3>
-                    <p>
-                      (special needs, per night)<br> £40 per night
-                    </p>
-                  </div>
-                </article>
-              </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Dog Boarding Services</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Home Boarding</h3>
+                  <p>£35 per night</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Social Boarding</h3>
+                  <p>(with other dogs, per night)<br />£30 per night</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Extended Stay</h3>
+                  <p>(7+ nights)<br />£25 per night</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Personalised Care</h3>
+                  <p>(special needs, per night)<br />£40 per night</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      <!--     <img
-        src="./assets/arrow-211-64.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      -->
+      </div>
     </section>
     <section class="image-gallery">
       <h1 class="title">Image Gallery</h1>
       <div>
-          <img src="/assets/images/family.jpg" alt="">
-          <img src="/assets/images/freddy.jpg" alt="">
-          <img src="assets/images/forest.jpg" alt="">
-          <img src="/assets/images/group.JPG" alt="">
-          <img src="/assets/images/buddy.jpg" alt="">
-          <img src="/assets/images/lakes.jpeg" alt="">
-          
-          
-        
+        <img src="/assets/images/family.jpg" alt="Family of dogs" />
+        <img
+          src="/assets/images/freddy.jpg"
+          alt="Dog named Freddy enjoying a walk"
+        />
+        <img src="assets/images/forest.jpg" alt="Dog exploring the forest" />
+        <img src="/assets/images/group.JPG" alt="Group of dogs on a walk" />
+        <img
+          src="/assets/images/buddy.jpg"
+          alt="Dog named Buddy resting after a walk"
+        />
+        <img src="/assets/images/lakes.jpeg" alt="Dog near a lake" />
       </div>
-  </section>
+    </section>
     <section id="contact">
-      <p class="section__text__p1">Follow us on <strong>Facebook </strong>for tail-wagging updates and pup-tastic adventures! 🐾</p>
+      <p class="section__text__p1">
+        Follow us on <strong>Facebook</strong> for tail-wagging updates and
+        pup-tastic adventures! 🐾
+      </p>
       <h1 class="title">Contact Us</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -362,7 +360,6 @@
           />
           <p><a href="tel:07580530990">07580530990</a></p>
         </div>
-      
         <div class="contact-info-container">
           <img
             src="./assets/facebook.png"
@@ -370,35 +367,24 @@
             class="icon contact-icon"
           />
           <p class="facebook">
-            <a
-              href="https://www.facebook.com/alfiewalksandboarding"
+            <a href="https://www.facebook.com/alfiewalksandboarding"
               >Facebook</a
             >
           </p>
         </div>
       </div>
     </section>
-    <script class="insights">
-      window.si =
-        window.si ||
-        function () {
-          (window.siq = window.siq || []).push(arguments);
-        };
-    </script>
-    <script defer src="/_vercel/speed-insights/script.js"></script>
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Services</a></li>
-            <li><a href="#projects">Prices</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Learn More About Us</a></li>
+            <li><a href="#skills">Explore Our Services</a></li>
+            <li><a href="#projects">Check Our Prices</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
           </ul>
         </div>
       </nav>
-    
     </footer>
-    <section id="projects"></section>
   </body>
 </html>
