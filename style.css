@@ -467,6 +467,7 @@ footer p {
   gap: 1.25rem;
   padding-top: 1.25rem;
 }
+
 .image-gallery img {
   display: block;
   width: 100%;
@@ -486,21 +487,13 @@ footer p {
   }
 }
 
-/* MAP SECTION */
-
-.map-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
+/* Add clear property to prevent overlap */
+#contact {
+  clear: both;
 }
 
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+.image-gallery img {
+  /* Add max-height to ensure images don't overflow */
+  max-height: 300px;
+  object-fit: cover; /* Ensure images are cropped properly within the height */
 }
